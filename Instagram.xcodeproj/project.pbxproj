@@ -13,6 +13,7 @@
 		CBE990121BF36CF30036DE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE990101BF36CF30036DE3C /* Main.storyboard */; };
 		CBE990141BF36CF30036DE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE990131BF36CF30036DE3C /* Assets.xcassets */; };
 		CBE990171BF36CF30036DE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE990151BF36CF30036DE3C /* LaunchScreen.storyboard */; };
+		CBE9901F1BF376D30036DE3C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9901E1BF376D30036DE3C /* PhotoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CBE990131BF36CF30036DE3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE990161BF36CF30036DE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE990181BF36CF30036DE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE9901E1BF376D30036DE3C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				CBE9900C1BF36CF30036DE3C /* AppDelegate.swift */,
 				CBE990101BF36CF30036DE3C /* Main.storyboard */,
+				CBE9901E1BF376D30036DE3C /* PhotoTableViewCell.swift */,
 				56CC73831BF373B500AFF9B3 /* PhotosViewController.swift */,
 				CBE990131BF36CF30036DE3C /* Assets.xcassets */,
 				CBE990151BF36CF30036DE3C /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 			files = (
 				56CC73841BF373B500AFF9B3 /* PhotosViewController.swift in Sources */,
 				CBE9900D1BF36CF30036DE3C /* AppDelegate.swift in Sources */,
+				CBE9901F1BF376D30036DE3C /* PhotoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
