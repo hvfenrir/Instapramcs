@@ -57,5 +57,21 @@ class PhotosViewController: UIViewController,UITableViewDataSource,UITableViewDe
         cell.photoImageView.setImageWithURL(NSURL(string: imgUrl)!)
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! PhotoDetailsViewController
+        let indexPath = photoTableView.indexPathForCell(sender as! UITableViewCell)!
+        
+        
+        let photo = photos[indexPath.row]
+        vc.photo = photo
+        
+    }
+
 
 }
