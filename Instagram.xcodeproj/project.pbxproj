@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07DEA881CF4F7CEC265669BE /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1749C9E07E7DFFEFE1E1F7F0 /* Pods_Instagram.framework */; };
+		56CC73841BF373B500AFF9B3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC73831BF373B500AFF9B3 /* PhotosViewController.swift */; };
 		CBE9900D1BF36CF30036DE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9900C1BF36CF30036DE3C /* AppDelegate.swift */; };
-		CBE9900F1BF36CF30036DE3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9900E1BF36CF30036DE3C /* ViewController.swift */; };
 		CBE990121BF36CF30036DE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE990101BF36CF30036DE3C /* Main.storyboard */; };
 		CBE990141BF36CF30036DE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE990131BF36CF30036DE3C /* Assets.xcassets */; };
 		CBE990171BF36CF30036DE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE990151BF36CF30036DE3C /* LaunchScreen.storyboard */; };
@@ -18,10 +18,10 @@
 /* Begin PBXFileReference section */
 		1749C9E07E7DFFEFE1E1F7F0 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6B89EFF710042ED3AD59F1 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		56CC73831BF373B500AFF9B3 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		628F3404660DB036833D4044 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		CBE990091BF36CF30036DE3C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE9900C1BF36CF30036DE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBE9900E1BF36CF30036DE3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBE990111BF36CF30036DE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBE990131BF36CF30036DE3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE990161BF36CF30036DE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				CBE9900C1BF36CF30036DE3C /* AppDelegate.swift */,
-				CBE9900E1BF36CF30036DE3C /* ViewController.swift */,
 				CBE990101BF36CF30036DE3C /* Main.storyboard */,
+				56CC73831BF373B500AFF9B3 /* PhotosViewController.swift */,
 				CBE990131BF36CF30036DE3C /* Assets.xcassets */,
 				CBE990151BF36CF30036DE3C /* LaunchScreen.storyboard */,
 				CBE990181BF36CF30036DE3C /* Info.plist */,
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE9900F1BF36CF30036DE3C /* ViewController.swift in Sources */,
+				56CC73841BF373B500AFF9B3 /* PhotosViewController.swift in Sources */,
 				CBE9900D1BF36CF30036DE3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
