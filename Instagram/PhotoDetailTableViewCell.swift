@@ -10,9 +10,12 @@ import UIKit
 
 class PhotoDetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameUser: UILabel!
     @IBOutlet weak var detailImageView: UIImageView!
+    @IBOutlet weak var profielImageView: UIImageView!
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }

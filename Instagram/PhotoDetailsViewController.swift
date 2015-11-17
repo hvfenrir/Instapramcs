@@ -36,13 +36,16 @@ class PhotoDetailsViewController: UIViewController, UITableViewDelegate, UITable
         
         if indexPath.row == 0 {
             let cell = UITableViewCell()
-            cell.textLabel?.text = photo?.valueForKeyPath("user.username") as? String
+//            cell.textLabel?.text = photo?.valueForKeyPath("user.username") as? String
             return cell
         }
         let cell = tableView.dequeueReusableCellWithIdentifier("photoDetailCell") as! PhotoDetailTableViewCell
-        
+        let nameUserCurrent = photo!.valueForKeyPath("user.username") as! String
         let imgUrl = photo!.valueForKeyPath("images.standard_resolution.url") as! String
+        let imgPro = photo!.valueForKeyPath("user.profile_picture") as! String
+        cell.nameUser.text = nameUserCurrent
         cell.detailImageView.setImageWithURL(NSURL(string: imgUrl)!)
+        cell.profielImageView.setImageWithURL(NSURL(string: imgPro)!)
         
         return cell
 
@@ -53,6 +56,7 @@ class PhotoDetailsViewController: UIViewController, UITableViewDelegate, UITable
             return 100
         }
         return 320
+        
     }
 
     /*

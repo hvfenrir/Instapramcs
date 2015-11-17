@@ -9,13 +9,15 @@
 import UIKit
 import AFNetworking
 
-class PhotosViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class PhotosViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     
     @IBOutlet weak var photoTableView: UITableView!
     var photos = [NSDictionary]()
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         photoTableView.delegate = self
         photoTableView.dataSource = self
         photoTableView.rowHeight = 320
@@ -38,7 +40,10 @@ class PhotosViewController: UIViewController,UITableViewDataSource,UITableViewDe
         }
         
         task.resume()
-        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "onRefresh", forControlEvents: UIControlEvents.ValueChanged)
+//        self.add(refreshControl, atIndex: 0)
+        self.photoTableView.addSubview(refreshControl)
         
         
     }
@@ -61,7 +66,20 @@ class PhotosViewController: UIViewController,UITableViewDataSource,UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
     
+    func onRefresh() {
+        delay(2, closure: {
+            self.refreshControl.endRefreshing()
+        })
+    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! PhotoDetailsViewController
